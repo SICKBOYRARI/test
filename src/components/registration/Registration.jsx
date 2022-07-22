@@ -68,7 +68,7 @@ function Registration() {
       case 'year':
 
         for (let i = endYear; i >= startYear; i -= 1) {
-          arr.push(<option value={i}>{i}</option>);
+          arr.push(<option key={i} value={i}>{i}</option>);
         }
         break;
 
